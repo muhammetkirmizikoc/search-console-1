@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <title>Fast & Safe</title>
+    <link rel="shortcut icon"
+        href="https://cdn0.iconfinder.com/data/icons/3d-dynamic-gradient/512/sun-dynamic-gradient.png"
+        type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://cdn4.iconfinder.com/data/icons/social-media-2210/24/Google-512.png"
+        type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/837be0c474.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css">
+</head>
+
+<body>
+    <div class="flex items-center justify-center">
+        <i class="fa-solid fa-bolt text-9xl mt-20 mb-10 text-yellow-500 animate__animated animate__backInDown"></i>
+    </div>
+    <div class="alan">
+        <div class="flex items-center justify-center mx-auto py-2 container">
+            <input placeholder="Hızlı Bir Arama Yapın..."
+                class="input bg-gray-50 ml-3 w-10/12 text-gray-100 bg-gray-900 text-xl py-3" type="text"
+                id="searchInput" name="searchInput" onkeydown="if (event.key === 'Enter') googleSearch()">
+            <button onclick="googleSearch()">
+                <i
+                    class="icon fa-solid fa-magnifying-glass text-3xl mx-4 text-red-500 bg-gray-900 hover:bg-gray-700 hover:text-gray-900 px-4 py-2 rounded-full"></i>
+            </button>
+        </div>
+    </div>
+    <div class="icerik mx-auto w-full" style="margin-top: 25vh;">
+        <div class="favori w-full mx-auto rounded p-5 py-10 bg-gray-900">
+            <a href="https://chat.openai.com/" class="boxs box-1" target="_blank"></a>
+            <a href="https://bard.google.com/" class="boxs box-2" target="_blank"></a>
+            <a href="https://gmail.com/" class="boxs box-6" target="_blank"></a>
+            <a href="https://github.com/" class="boxs box-3" target="_blank"></a>
+            <a href="https://vercel.com/" class="boxs box-7" target="_blank"></a>
+            <a href="https://www.youtube.com/" class="boxs box-4" target="_blank"></a>
+            <a href="https://music.youtube.com/" class="boxs box-5" target="_blank"></a>
+        <div class="donate mt-20 flex items-center justify-center container mx-auto bg-gray-800 rounded py-4">
+            <a href="#" class="bg-yellow-600 rounded text-gray-100 text-md py-2 px-3 hover:text-gray-900 hover:bg-gray-50">Donate</a>
+             <a href="https://muhammetkirmizikoc.com/" class="ml-20 bg-yellow-600 rounded text-gray-100 text-md py-2 px-3 hover:text-gray-900 hover:bg-gray-50">Who is Muhammet</a>
+        </div>
+        </div>
+    </div>
+</body>
+
+<script>
+    function googleSearch() {
+        var inputValue = document.getElementById('searchInput').value;
+        var searchQuery = "https://www.google.com/search?q=" + encodeURIComponent(inputValue);
+        window.location.href = searchQuery;
+    }
+</script>
+</body>
+
+</html>
